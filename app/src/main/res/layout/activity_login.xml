@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#253334"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="33dp"
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_marginTop="8dp"
+        android:text="Sign in"
+        android:layout_marginLeft="60dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/TIETemail"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="70dp"
+        android:textColor="#BEC2C2"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#BEC2C2"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/TIETpassword"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:textColor="#BEC2C2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/TIETemail"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#BEC2C2"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIETpassword"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonp"
+        android:gravity="center"
+        android:text="Sign in"
+        android:onClick="ClickMain"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/tvr"
+        android:background="@drawable/buttonp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Профиль" />
+
+    <TextView
+        android:id="@+id/tvr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:text="Register"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:onClick="ClickReg"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvr"
+        android:layout_marginTop="-38dp"
+        app:srcCompat="@drawable/tree" />
+</RelativeLayout>
