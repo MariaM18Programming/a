@@ -77,7 +77,8 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:text="Профиль" />
+        android:text="Профиль"
+        android:onClick="ClickProfile"/>
 
     <TextView
         android:id="@+id/tvr"

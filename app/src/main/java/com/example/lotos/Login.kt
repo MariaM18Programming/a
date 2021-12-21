@@ -20,4 +20,8 @@ class Login : AppCompatActivity() {
         val intent = Intent(this, Main::class.java)
         startActivity(intent)
     }
+    fun ClickProfile(view : View) {
+        val intent = Intent(this, Profile::class.java)
+        startActivity(intent)
+    }
 }

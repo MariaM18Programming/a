@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Lotos"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".Main"
             android:exported="true" />
         <activity
